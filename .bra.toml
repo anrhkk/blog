@@ -1,6 +1,6 @@
 [run]
 init_cmds = [
-	["go", "run", "main.go"]
+	["./blog"]
 ]									# Commands run in start
 watch_all = true					# Watch all sub-directories
 watch_dirs = [
@@ -14,9 +14,10 @@ ignore = [".git", "vendor"] 	    # Directories to exclude from watching
 ignore_files = []					# Regexps for ignoring specific notifies
 build_delay = 500					# Minimal interval to Trigger build event
 interrupt_timout = 5				# Time to wait until force kill
-graceful_kill = true				# Wait for exit and before directly kill
+graceful_kill = false				# Wait for exit and before directly kill
 cmds = [
     ["../../bin/go-bindata","-o","static/assets/assets.go","-pkg","assets","assets/..."],
     ["../../bin/go-bindata","-o","static/views/views.go","-pkg","views","views/..."],
-	["go", "run", "main.go"]
+	["go", "build", "-o","blog"],
+	["./blog"]
 ]									# Commands to run

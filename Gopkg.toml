@@ -23,19 +23,43 @@
 
 [[constraint]]
   branch = "master"
+  name = "github.com/Unknwon/goconfig"
+
+[[constraint]]
+  branch = "master"
   name = "github.com/go-macaron/bindata"
 
 [[constraint]]
   branch = "master"
-  name = "github.com/jpillora/overseer"
+  name = "github.com/go-macaron/binding"
 
 [[constraint]]
   branch = "master"
-  name = "github.com/Unknwon/bra"
+  name = "github.com/go-macaron/cache"
 
 [[constraint]]
   branch = "master"
-  name = "github.com/flosch/pongo2"
+  name = "github.com/go-macaron/captcha"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/go-macaron/csrf"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/go-macaron/pongo2"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/go-macaron/session"
+
+[[constraint]]
+  name = "github.com/go-sql-driver/mysql"
+  version = "1.3.0"
+
+[[constraint]]
+  name = "github.com/go-xorm/xorm"
+  version = "0.6.4"
 
 [[constraint]]
   name = "gopkg.in/macaron.v1"
@@ -43,4 +67,4 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/go-macaron/pongo2"
+  name = "github.com/flosch/pongo2"
