@@ -1,8 +1,9 @@
 package controllers
 
 import (
-	"github.com/go-macaron/binding"
+	. "blog/common"
 	"blog/models"
+	"github.com/go-macaron/binding"
 )
 
 func SignUp(ctx *Context, formErr binding.Errors, user models.User) {
